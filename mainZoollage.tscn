@@ -2,29 +2,76 @@
 
 [ext_resource type="Script" uid="uid://j0oyhogbhu6h" path="res://player_sprite.gd" id="1_ebqjj"]
 [ext_resource type="Texture2D" uid="uid://cyv4gjgaavf8p" path="res://image_2026-11-14_210313190-removebg-preview.png" id="1_ug83f"]
-[ext_resource type="Script" uid="uid://vx3mopljakva" path="res://text_edit.gd" id="3_rff0q"]
+[ext_resource type="Texture2D" uid="uid://b4dl3qaymd7kn" path="res://beach background.jpg" id="3_25m1b"]
+[ext_resource type="Texture2D" uid="uid://cqdtajui3i2kx" path="res://underawter.jpeg" id="4_tpcl7"]
+[ext_resource type="Texture2D" uid="uid://dbdv7hg8dwr0a" path="res://mountain.jpg" id="5_lggt4"]
+[ext_resource type="Texture2D" uid="uid://c4yirghsvwv0n" path="res://space.jpg" id="6_ftuou"]
+[ext_resource type="Texture2D" uid="uid://eejppfkd21yr" path="res://image1.png" id="7_4q7qv"]
 
 [node name="Node2D" type="Node2D" unique_id=592290011]
-
-[node name="Player_Sprite" type="CharacterBody2D" parent="." unique_id=2089423260]
 script = ExtResource("1_ebqjj")
 
+[node name="Player_Sprite" type="CharacterBody2D" parent="." unique_id=2089423260]
+
 [node name="Sprite2D" type="Sprite2D" parent="Player_Sprite" unique_id=1948887621]
-position = Vector2(797, 525)
+position = Vector2(800, 650)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_ug83f")
 
-[node name="TextEdit" type="TextEdit" parent="." unique_id=1838994793]
+[node name="TextEdit" type="LineEdit" parent="." unique_id=681029822]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 687.0
-offset_top = 216.0
+offset_top = 377.0
 offset_right = 923.0
-offset_bottom = 382.0
+offset_bottom = 408.83508
 grow_horizontal = 2
 grow_vertical = 2
-placeholder_text = "Answer Here...."
-script = ExtResource("3_rff0q")
+placeholder_text = "Answer Here..."
+
+[node name="Label" type="Label" parent="." unique_id=999971118]
+offset_left = 684.0
+offset_top = 331.0
+offset_right = 784.0
+offset_bottom = 380.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.9647059)
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 10
+text = "What's 2 + 2?
+"
+
+[node name="Backgrounds" type="Node2D" parent="." unique_id=1318816248]
+z_as_relative = false
+
+[node name="BeachBackground" type="Sprite2D" parent="Backgrounds" unique_id=1512942356]
+z_index = -1
+position = Vector2(801, 452)
+scale = Vector2(2.2305555, 2.511111)
+texture = ExtResource("3_25m1b")
+
+[node name="Underawter" type="Sprite2D" parent="Backgrounds" unique_id=839706897]
+z_index = -1
+position = Vector2(790.375, 1347.5001)
+scale = Vector2(4.8608637, 4.776041)
+texture = ExtResource("4_tpcl7")
+
+[node name="Mountain" type="Sprite2D" parent="Backgrounds" unique_id=405384661]
+z_index = -1
+position = Vector2(810, -502)
+scale = Vector2(2.4875195, 2.7499998)
+texture = ExtResource("5_lggt4")
+
+[node name="Space" type="Sprite2D" parent="Backgrounds" unique_id=376128958]
+z_index = -1
+position = Vector2(804, -1465.5)
+scale = Vector2(0.82604164, 0.98020834)
+texture = ExtResource("6_ftuou")
+
+[node name="Image1" type="Sprite2D" parent="Backgrounds" unique_id=757228466]
+z_index = -1
+position = Vector2(798.5, 2280)
+scale = Vector2(1.9649758, 2.5865922)
+texture = ExtResource("7_4q7qv")
