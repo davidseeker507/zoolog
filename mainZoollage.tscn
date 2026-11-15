@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cgojp370k5llr"]
+
+[ext_resource type="Script" uid="uid://j0oyhogbhu6h" path="res://player_sprite.gd" id="1_ebqjj"]
+[ext_resource type="Texture2D" uid="uid://cyv4gjgaavf8p" path="res://image_2026-11-14_210313190-removebg-preview.png" id="1_ug83f"]
+[ext_resource type="Script" uid="uid://vx3mopljakva" path="res://text_edit.gd" id="3_rff0q"]
+
+[node name="Node2D" type="Node2D" unique_id=592290011]
+
+[node name="Player_Sprite" type="CharacterBody2D" parent="." unique_id=2089423260]
+script = ExtResource("1_ebqjj")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player_Sprite" unique_id=1948887621]
+position = Vector2(797, 525)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_ug83f")
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=1838994793]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 687.0
+offset_top = 216.0
+offset_right = 923.0
+offset_bottom = 382.0
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Answer Here...."
+script = ExtResource("3_rff0q")
